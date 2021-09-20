@@ -9,11 +9,9 @@ body {
 span {
     font-style: italic;
 }
-div {
-    background-color: aqua;
-}
-.row {
-}
+// div {
+//     background-color: aqua;
+// }
 
 .skaters-section-arrow {
     display: flex;
@@ -29,13 +27,27 @@ div {
     line-height: 0;
     margin-bottom: 10px;
 }
-
+.nav-link:hover {
+    color: red;
+}
 .nav-text {
     font-size: 12px;
     text-transform: uppercase;
     margin-top: 10px;
+    text-decoration: none;
+    color: white;
 }
 
+.nav-text:hover {
+    color: red;
+}
+
+button.col a {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 button.col {
     background-color: red;
     color: white;
@@ -69,6 +81,9 @@ button.col {
     margin-left: 15%;
     list-style: none;
 }
+.gridpic {
+    opacity: 0.4;
+}
 
 .row-three {
     margin-top: 35px;
@@ -88,9 +103,10 @@ button.col {
 }
 .rowtwo {
     height: 150px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
 }
+
 .arrow-pointer {
     width: 250px;
     height: 50px;
@@ -100,8 +116,6 @@ button.col {
     text-transform: uppercase;
     font-size: 16px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
 
     &:after {
         content: "";
@@ -125,5 +139,47 @@ button.col {
         border-left: 25px solid red;
         border-top: 25px solid transparent;
         border-bottom: 25px solid transparent;
+    }
+}
+
+.col-sm-2 {
+    height: 165px;
+    width: 19%;
+
+    h2 {
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        line-break: auto;
+    }
+}
+.col-sm-2 img {
+    height: 80%;
+    border: 3px solid white;
+}
+
+.rowthree {
+    height: 150px;
+    margin-top: 10px;
+    display: flex;
+    .col-sm-5 {
+        height: 100%;
+        margin-left: 22%;
+        padding: 0;
+        width: 40.97%;
+        height: 100%;
+        margin-left: 22.09%;
+        padding: 0;
+        h2 {
+            color: white;
+            position: absolute;
+            font-size: 20px;
+            line-break: auto;
+        }
+        img {
+            border: 3px solid white;
+            width: 90%;
+            height: 80%;
+        }
     }
 }
