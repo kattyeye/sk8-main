@@ -11,10 +11,6 @@ span {
   font-style: italic;
 }
 
-div {
-  background-color: aqua;
-}
-
 .skaters-section-arrow {
   display: flex;
   align-items: center;
@@ -31,10 +27,27 @@ div {
   margin-bottom: 10px;
 }
 
+.nav-link:hover {
+  color: red;
+}
+
 .nav-text {
   font-size: 12px;
   text-transform: uppercase;
   margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-text:hover {
+  color: red;
+}
+
+button.col a {
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 button.col {
@@ -71,6 +84,10 @@ button.col {
   list-style: none;
 }
 
+.gridpic {
+  opacity: 0.4;
+}
+
 .row-three {
   margin-top: 35px;
 }
@@ -92,7 +109,7 @@ button.col {
 
 .rowtwo {
   height: 150px;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
 }
 
@@ -105,8 +122,6 @@ button.col {
   text-transform: uppercase;
   font-size: 16px;
   text-align: center;
-  justify-content: center;
-  align-items: center;
 }
 .arrow-pointer:after {
   content: "";
@@ -129,6 +144,33 @@ button.col {
   border-left: 25px solid red;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
+}
+
+.col-sm-2 {
+  height: 165px;
+  width: 19%;
+}
+.col-sm-2 h2 {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  line-break: auto;
+}
+
+.col-sm-2 img {
+  height: 100%;
+  border: 3px solid white;
+}
+
+.rowthree {
+  height: 150px;
+  margin-top: 10px;
+  display: flex;
+}
+.rowthree .col-sm-5 {
+  height: 100%;
+  margin-left: 22%;
+  border: 3px solid white;
 }
 
 /*# sourceMappingURL=styles.css.map */
