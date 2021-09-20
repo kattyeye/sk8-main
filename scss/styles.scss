@@ -87,7 +87,43 @@ button.col {
     color: red;
 }
 .rowtwo {
-    height: 180px;
+    height: 150px;
     margin-top: 20px;
     display: flex;
+}
+.arrow-pointer {
+    width: 250px;
+    height: 50px;
+    background: red;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 25px solid red;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        right: -25px;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-left: 25px solid red;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+    }
 }
