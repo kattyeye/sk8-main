@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(/Users/katherineingram/Documents/ccs/homework/sk8-main/images/bg-copy.jpg);
+  background-image: url("../images/bg-copy.jpg");
   font-size: 11px;
 }
 
@@ -68,6 +68,15 @@ button.col {
 
 .carousel-inner {
   height: 245px;
+  overflow: hidden;
+}
+.carousel-inner img {
+  width: 100%;
+}
+
+.card > img {
+  position: relative;
+  right: -80px;
 }
 
 .carousel-indicators {
@@ -86,6 +95,12 @@ button.col {
 
 .gridpic {
   opacity: 0.4;
+}
+
+article {
+  background-color: white;
+  margin: 5px;
+  padding: 15px;
 }
 
 .row-three {
@@ -209,26 +224,31 @@ button.col {
   border: 3px solid white;
 }
 
-.rowfour {
-  justify-content: center;
-  margin-bottom: 200px;
-}
-
-.col-lg-1 {
-  flex: 0 0 auto;
-  width: 5.8%;
-  transform: rotate(90deg);
-  justify-content: center;
-}
-
-.skateboards img {
-  height: 80%;
-}
-
 .boards-bg {
   background-color: white;
 }
 
+#boarddesign {
+  background: white;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.skateboards img {
+  width: 260px;
+  height: 65px;
+  transform-origin: center;
+}
+
+@media (min-width: 768px) {
+  .skateboards {
+    position: relative;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-37%);
+    height: 260px;
+    width: 65px;
+  }
+}
 .rowfive {
   justify-content: center;
   margin-left: 5px;
