@@ -150,6 +150,8 @@ button.col {
         color: white;
         position: absolute;
         font-size: 20px;
+        padding-top: 80px;
+        padding-left: 50px;
         line-break: auto;
     }
 }
@@ -159,7 +161,7 @@ button.col {
 }
 
 .rowthree {
-    height: 150px;
+    height: 220px;
     margin-top: 10px;
     display: flex;
     .col-sm-5 {
@@ -173,6 +175,7 @@ button.col {
         h2 {
             color: white;
             position: absolute;
+            padding: 50px;
             font-size: 20px;
             line-break: auto;
         }
@@ -182,4 +185,58 @@ button.col {
             height: 80%;
         }
     }
+}
+
+.col .skater-last {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: -50px;
+    margin-top: -153px;
+    margin-right: 144px;
+    h2 {
+        color: white;
+        position: absolute;
+        font-size: 20px;
+    }
+    img {
+        width: 63%;
+        border: 3px solid white;
+    }
+}
+
+.rowfour {
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.col-lg-1 {
+    flex: 0 0 auto;
+    width: 5.8%;
+    transform: rotate(90deg);
+    justify-content: center;
+}
+.skateboards img {
+    height: 80%;
+}
+
+.boards-bg {
+    background-color: white;
+}
+
+.rowfive {
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    .col {
+        background-color: white;
+        padding: 20px;
+    }
+}
+
+.btn-sub {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: gray 5px solid;
+    padding: 5px 15px;
 }
